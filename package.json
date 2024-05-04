@@ -1,0 +1,13 @@
+{
+  "name": "aflamy",
+  "version": "1.0.0",
+  "description": "Movies APP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w scss/:dist/"
+  },
+  "keywords": ["fullstack", "login/Signup", "Credentials", "Movies", "Categories", "APIs"],
+  "author": "Anass Seghir",
+  "license": "ISC"
+}

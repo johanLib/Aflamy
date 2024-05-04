@@ -1,0 +1,9 @@
+{
+    "theme_color": "#763BC9",
+    "background_color": "#763BC9",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Sign-in, Sign-Up System",
+    "short_name": "System LoginIN",
+    "description": "Sign-in, Sign-Up System Used To Store User Informations"
+}

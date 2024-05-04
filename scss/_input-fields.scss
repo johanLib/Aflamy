@@ -1,0 +1,74 @@
+@mixin input($bgColor: #f0f0f0) {
+    max-width: 380px;
+    width: 100%;
+    background-color: $bgColor;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 0.7em;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+.input-field {
+    @include input;
+    i {
+        text-align: center;
+        line-height: 55px;
+        color: #acacac;
+        transition: 0.5s;
+        font-size: 1.1rem;
+      }
+
+    input {
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+
+        &:-webkit-autofill {
+            background: none !important;
+        }
+    }
+
+    input::placeholder {
+        color: #aaa;
+        font-weight: 500;
+    }
+}
+.inputEdit-field {
+    @include input($bgColor: white);
+    i {
+        text-align: center;
+        line-height: 55px;
+        color: #acacac;
+        transition: 0.5s;
+        font-size: 1.1rem;
+      }
+
+    input {
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    input::placeholder {
+        color: #aaa;
+        font-weight: 500;
+    }
+}
+input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}

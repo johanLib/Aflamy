@@ -1,0 +1,106 @@
+$primary-color: #763BC9;
+  .signin-signup {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 75%;
+    width: 50%;
+    transition: 1s 0.7s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+
+    @media (max-width: 870px) {
+        width: 100%;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        transition: 1s 0.8s ease-in-out;
+    }
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 3rem;
+    width: 26em;
+
+    @media (max-width: 570px) {
+      padding: 0 1.5rem;
+    }
+  }
+
+  form.sign-up-form {
+    opacity: 0;
+    z-index: 1;
+    margin: auto;
+  }
+  
+  form.sign-in-form {
+    z-index: 2;
+    margin: auto;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  .edit-title {
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  @mixin btn_layout($color: #fff, $bgColor: $primary-color, $border: none, $to-border: $primary-color) {
+    width: 150px;
+    background-color: $bgColor;
+    border: $border;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: $color;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 0.5s ease, background-color 0.5s ease;
+
+    &:hover {
+      background-color: $color;
+      border: 2px solid $to-border;
+      color: $bgColor;
+    }
+  }
+
+  .btn {
+    @include btn_layout;
+  }
+
+  .edit-btn {
+    @include btn_layout($border: 2px solid white, $to-border: $primary-color);
+  }
+
+  .update-btn {
+    @include btn_layout($color: $primary-color, $bgColor: #fff , $border: 2px solid $primary-color)
+  }
+
+  @media (max-width: 870px) {
+    .container.sign-up-mode .signin-signup {
+        left: 50% !important;
+    }
+  }
+
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,14 @@
+.rating-movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: gold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+}

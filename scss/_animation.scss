@@ -1,0 +1,59 @@
+.container.sign-up-mode {
+    &:before {
+        transform: translate(100%, -50%);
+        right: 52%;
+        bottom: 28%;
+        @media (max-width: 870px) {
+            transform: translate(-50%, 100%);
+            right: initial;
+        }
+        @media (max-width: 570px) {
+            left: 50%;
+        }
+    }
+    .left-panel {
+        pointer-events: none;
+        .image {
+            transform: translateX(-800px);
+            @media (max-width: 870px) {
+                transform: translateY(-300px);
+            }
+        }
+        .content {
+            transform: translateX(-800px);
+            @media (max-width: 870px) {
+                transform: translateY(-300px);
+            }
+        }
+    }
+    .right-panel {
+        pointer-events: all;
+        .image {
+            transform: translateX(0%);
+            @media (max-width: 870px) {
+                transform: translateY(0px);
+            }
+        }
+        .content {
+            transform: translateX(0%);
+            @media (max-width: 870px) {
+                transform: translateY(0px);
+            }
+        }
+    }
+    .signin-signup {
+        left: 25%;
+        @media (max-width: 870px) {
+            top: 5%;
+            transform: translate(-50%, 0);
+        }
+    }
+    form.sign-up-form {
+        opacity: 1;
+        z-index: 2;
+    }
+    form.sign-in-form {
+        opacity: 0;
+        z-index: 1;
+    }
+}
