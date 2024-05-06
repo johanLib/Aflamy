@@ -254,10 +254,11 @@ let getMovie = () => {
           document.getElementById('rate-btn').addEventListener('click', () => {
             const ratedStars = document.querySelectorAll('.stars i.active').length;
             const infos = {
+              user_id: userId,
               title: data.Title,
               rating: ratedStars
             }
-            console.log(infos.title + "\n" + infos.rating);
+            console.log(infos.user_id + "\n" + infos.title + "\n" + infos.rating);
             fetch("php/edit_rating.php", {
                 method: "POST",
                 headers: {
