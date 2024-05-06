@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_title = mysqli_real_escape_string($con, $title);
     $sanitized_rating = mysqli_real_escape_string($con, $rating);
 
-    $exist = "SELECT Id FROM favorites  WHERE Poster = '$sanitized_poster' AND Title = '$sanitized_title'";
+    $exist = "SELECT Id FROM favorites  WHERE Title = '$sanitized_title' AND user_id = '$user_id'";
     $result_exist = mysqli_query($con, $exist);
     if (mysqli_num_rows($result_exist) > 0) {
         echo json_encode(array("status" => "duplicate", "message" => "This movie is already in your Favorites!"));      

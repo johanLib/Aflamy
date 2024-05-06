@@ -3,7 +3,7 @@ include("config.php");
 
 function doesExist($table, $poster, $title, $rating, $user_id) {
     global $con;
-    $exist = "SELECT Id FROM $table WHERE Poster = '$poster' AND Title = '$title'";
+    $exist = "SELECT Id FROM $table WHERE Title = '$title' AND user_id = '$user_id'";
     $result_exist = mysqli_query($con, $exist);
     if(mysqli_num_rows($result_exist) > 0) {
         return "duplicate";
