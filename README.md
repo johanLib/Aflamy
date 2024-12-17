@@ -46,17 +46,17 @@ With Aflamy, you can:
 
 Here are a few snapshots of Aflamy:
 
-![Homepage](screenshots/aflamy.png)
+![Homepage](images/aflamy.png)
 
-![index](screenshots/index.jpg)
+![index](images/index.jpg)
 
-![home](screenshots/home.jpg)
+![home](images/home.jpg)
 
-![completed](screenshots/completed.jpg)
+![completed](images/completed.jpg)
 
-![movies](screenshots/movies.jpg)
+![movies](images/movies.jpg)
 
-![features](screenshots/features.jpg)
+![features](images/features.jpg)
 
 ---
 
