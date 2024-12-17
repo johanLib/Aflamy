@@ -62,7 +62,7 @@ Here are a few snapshots of Aflamy:
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: HTML, SCSS, Vanilla JavaScript
 - **Backend**: PHP
 - **Database**: MySQL
 - **External API**: IMDB API for movie data
