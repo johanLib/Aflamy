@@ -26,7 +26,7 @@ With Aflamy, you can:
 
 ## Features
 
-- **Full Responsive Design**: Optimized for all types of devices, ensuring a seamless experience across screens of any size.
+- **Fully Responsive Design**: Optimized for all types of devices, ensuring a seamless experience across screens of any size.
 - **User Authentication**: Sign in and Sign up securely using email and password.
 - **Update Profile**: Customize your user profile.
 - **Movie Management (CRUD Ops)**:
