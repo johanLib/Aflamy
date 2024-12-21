@@ -29,7 +29,7 @@ With Aflamy, you can:
 - **Full Responsive Design**: Optimized for all types of devices, ensuring a seamless experience across screens of any size.
 - **User Authentication**: Sign in and Sign up securely using email and password.
 - **Update Profile**: Customize your user profile.
-- **Movie Management**:
+- **Movie Management (CRUD Ops)**:
   - Add movies to your personalized lists.
   - Remove a specific movie from a list.
   - Change the status of a movie (Watching, Completed, etc.).
